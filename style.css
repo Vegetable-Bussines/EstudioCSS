@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+p {
+	width: 50%;
+	border: 1px solid black;
+	padding: 8px;
+}
+
+.p1 {
+	box-sizing: ;
+	float: right;
+}
