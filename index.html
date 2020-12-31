@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Columnas</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Doble columnas</h1>
+		</header>
+
+		<section>
+			<h3>Entendiendo el modelo de "Caja":</h3>
+			<p>
+				¿Que es una caja? Básicamente todo elemento (ó etiqueta) html se
+				le puede llamar como una caja con su ancho (width) y alto
+				(height) definidos como propiedades.
+			</p>
+
+			<h3>¿Y... Cómo sé cúanto mide una caja?</h3>
+			<p>
+				Lo podemos averiguar sumando borde, relleno (padding) y el ancho
+				(ó alto) correspondiente, resultado seria la dimension total del
+				elemento. <br />
+				Pero... si establecemos esta propiedad mediante el comando
+				{width: n} lo que en realidad estamos estableciendo es el ancho
+				(o alto) interno del elemento, es decir, el ancho del contenido
+				sin tomar en cuenta ni relleno, ni borde, si queremos corregir
+				esto y declarar el ancho total de un elemento lo podemos haceer
+				mediante la propiedad {box-sizing: border-box}.
+			</p>
+
+			<h3>¿Qué hace {box-sizing: border-box}?</h3>
+
+			<p>
+				{box-sizing:border-box} cambia la forma en la que mide una caja,
+				ahora si tomamos en cuenta relleno y borde (y no el margen) al
+				establecer el valor de alguna de las 2 dimensiones de un
+				elemento. El valor por defecto de todos los elementos es
+				{box-sizing: content-box}.
+			</p>
+		</section>
+	</body>
+</html>
